@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = 1;
+      var b = 5;
+      var c = a + b;
+
+      console.log(c);
+
+      // ARITHMATIC OPERATORS
+      let first = Number(prompt("ENTER YOUR FIRST VALUE"));
+      let second = Number(prompt("ENTER YOUR SECOND VALUE"));
+      // let add=(first+second);
+      let add = first + second;
+      console.log("ADD", add);
+
+      let sub = first - second;
+      console.log("SUB", sub);
+
+      let div = first / second;
+      console.log("DIV", div);
+
+      let mul = first * second;
+      console.log("MUL", mul);
+
+      let mod = first % second;
+      console.log("MOD", mod);
+
+      // ASSIGNMENT OPERATOR
+
+      let A = Number(prompt("Enter Assignment value"));
+      A += 3;
+      console.log("Assignment add+3:", A);
+
+      A -= 3;
+      console.log("Assignment sub-3:", A);
+
+      A *= 3;
+      console.log("Assignment mul*3:", A);
+
+      A /= 3;
+      console.log("Assignment div/3:", A);
+
+      A %= 3;
+      console.log("Assignment module%3:", A);
+
+      //   COMPARISION OPERATOR
+
+      var b = Number(prompt("Enter firstcomp value"));
+      var c = prompt("Enter secondcomp value");
+      console.log("first", b, "second", c);
+      console.log("result", b == c);
+
+      console.log("result", b === c);
+
+      //   LOGICAL OPERATOR
+
+    //   var d = Number(prompt("Enter flogic value"));
+    //   var e = Number(prompt("Enter slogic value"));
+      console.log("and",b>5 && c<=3);
+
+      console.log("or",b=>5 || c<3);
+
+      //tERNARY OPEAATOR 
+      var age =Number(prompt("Enter your age "));
+      var canvote =(age>18) ? "yes you can vote👍" :"you can't vote ❌";
+      console.log(canvote);
+
+      //unary opeator 
+      var p =Number(prompt("Enter p value"));
+      var q =Number(prompt("Enter q value"));
+      //post increment 
+      console.log("1st time ++",p++ + q++ ); //in that the number is not increase because we need to call 2nd time then they increase
+      console.log("2nd time ++",p + q ); //in case we call 2nd time so numer is increase by +1
+
+      console.log("1st time --",p-- + q-- );
+      console.log("1st time --",p-- + q-- );
+
+
+/// now pre increment 
+console.log("pre increment ",--p + --q );
+
+
+//mixes
+console.log("mixed", p++ + --q + p-- + q--);
+
+
+
+
+    </script>
+  </body>
+</html>
